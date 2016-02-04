@@ -6,11 +6,26 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <style>
+            .param {
+                width: 50px;
+            }
+            input {
+                margin: 5px 0;
+            }
+        </style>
+        <title>Aula LP3</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Equacao de segundo grau</h1>
+        <form action="Controller" method="GET">
+            <input type="hidden" command="equacao.calcular">
+            <div>
+                F(x) = <input class="param" type="text" name="paramA">x<sup>2</sup> + <input class="param" type="text" name="paramB">x + <input class="param" type="text" name="paramB">
+            </div>
+            <input type="submit" value="CALCULAR">
+        </form>
     </body>
 </html>
